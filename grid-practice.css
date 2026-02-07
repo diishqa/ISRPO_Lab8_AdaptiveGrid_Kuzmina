@@ -1,0 +1,47 @@
+.grid-practice {
+    display: grid;
+    grid-template-columns: 200px 1fr 300px;
+    grid-template-rows: 80px 1fr 200px 60px;
+    grid-template-areas:
+        "header header header"
+        "sidebar main widget1"
+        "sidebar main widget2"
+        "footer footer footer";
+    gap: 15px;
+    min-height: 600px;
+}
+.header {
+    grid-area: header;
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
+.sidebar {
+    grid-area: sidebar;
+    background: #ebd7e2;
+}
+.main {
+    grid-area: main;
+    background: white;
+}
+.widget1 {
+    grid-area: widget1;
+    background: #90caf9;
+    display: flex;
+    justify-content: center;
+}
+.widget2 {
+    grid-area: widget2;
+    background: #a5d6a7;
+    display: flex;
+    justify-content: center;
+}
+.footer {
+    grid-area: footer;
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
