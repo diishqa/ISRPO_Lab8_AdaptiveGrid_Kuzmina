@@ -1,0 +1,3 @@
+.grid-container {
+    grid-template-rows: 100px auto auto auto auto 100px;
+}
