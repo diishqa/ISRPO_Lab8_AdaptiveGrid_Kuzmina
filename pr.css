@@ -1,3 +1,20 @@
-.grid-container {
-    grid-template-rows: 100px auto auto auto auto 100px;
+.simple-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.page-layout {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 200px auto;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    gap: 10px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
 }
